@@ -1,0 +1,13 @@
+#Entrar com os lados a, b, c de um paralelepípedo. Calculare imprimir a diagonal. 
+prog algoritmo53
+       real a, b, c, diag;
+       imprima "\nDigite o lado a: ";
+       leia a;
+       imprima "\nDigite o lado b: ";
+       leia b;
+       imprima "\nDigite o lado c: ";
+       leia c;
+       diag <- raiz(a**2 + b**2 + c**2);
+       imprima "\nDiagonal: ", diag;
+       imprima "\n";
+fimprog                                                                   

@@ -1,0 +1,35 @@
+#Entrar com três números e armazená-los em três variáveis com os seguintes nomes: maior, intermediário e menor (suponha números difer~ntes) .
+prog algoritmo120
+       int a, b, c, maior, menor, medio, aux;
+       imprima "Entre com A: ";
+       leia a;
+       imprima "\nEntre com B: ";
+       leia b;
+       imprima "\nEntre com C: ";
+       leia c;
+       
+       se (a > b){
+          aux <- a;
+          a <- b;
+          b <- aux;
+
+       }
+       
+       se (a > c){
+          aux <- a;
+          a <- c;
+          c <- aux;
+       }
+       
+       se (b > c){
+          aux <- b;
+          b  <- c;
+          c <- aux; 
+       }
+       
+       maior <- c;
+       medio <- b;
+       menor <- a;
+       
+       imprima "\n\nOrdem: ", a, " ", b, " ", c, "\n";
+fimprog

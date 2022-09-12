@@ -1,0 +1,11 @@
+#Ler dois números inteiros e imprimir a soma. Antes do resultado, deverá aparecer a mensagem: Soma.
+prog algoritmo36
+       int n1, n2, result;
+       imprima "Digite um numero inteiro: ";
+       leia n1;
+       imprima "\nDigite outro numero inteiro: ";
+       leia n2;
+       result <- n1+n2;
+       imprima "\nA soma dos numeros e: ", result;
+       imprima "\n";
+fimprog

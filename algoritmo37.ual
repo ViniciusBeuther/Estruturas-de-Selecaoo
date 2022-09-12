@@ -1,0 +1,12 @@
+#Ler dois números inteiros e imprimir o produto.
+prog algoritmo37
+     int n1, n2, result;
+     imprima "Digite um numero inteiro: ";
+     leia n1;
+     imprima "\nDigite outro numero inteiro: ";
+     leia n2;
+     result <- n1 * n2;
+     imprima "\nO produto dos numeros e: ", result;
+     imprima "\n\n";
+
+fimprog

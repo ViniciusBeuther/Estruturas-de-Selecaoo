@@ -1,0 +1,14 @@
+#Entrar com um número e imprimir a seguinte saída:
+#numero :
+#quadrado :
+#raiz quadrada:
+
+prog algoritmo45
+       int n1;
+       imprima "Digite um valor ao qual deseja ver o quadrado e raiz quadrada: ";
+       leia n1;
+       imprima "\nNumero digitado: ", n1;
+       imprima "\nValor ao quadrado: ", n1^2;
+       imprima "\nRaiz quadrada: ", raiz(n1);
+       imprima "\n\n";
+fimprog

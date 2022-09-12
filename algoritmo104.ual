@@ -1,0 +1,23 @@
+#Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e
+#tiver menos que 25 anos, imprimir nome e a mensagem: ACEITA. Caso contrário,
+#imprimir nome e a mensagem: NÃO ACEITA. (Considerar f ou F.)
+prog algoritmo104
+       string nome, sexo;
+       int idade;
+       
+       imprima "\nDigite o seu nome: ";
+       leia nome;
+       imprima "\nDigite seu sexo (F ou M): ";
+       leia sexo;
+       imprima "\nDigite sua idade: ";
+       leia idade;
+       se (sexo == "F" && idade < 25)
+       {
+        imprima nome, ", ACEITA\n";
+       }
+       se (sexo <> "F" || idade >= 25)
+       {
+        imprima nome, ", NAO ACEITA\n";
+       }
+       
+fimprog 

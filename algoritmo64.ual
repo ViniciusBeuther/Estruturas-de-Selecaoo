@@ -1,0 +1,13 @@
+#Ler uma temperatura em graus centígrados e apresentá-la convertida em graus
+#Fahrenheit. A fórmula de conversão é:
+#F = 9·c + 160 onde F é a temperatura em
+#5 Fahrenheit e C é a temperatura em centígrados.
+
+prog algoritmo64
+       real temp, convertido;
+       imprima "\nDigite a temperatura em graus C: ";
+       leia temp;
+       convertido <- (9*temp + 160) / 5;
+       imprima "\nO valor convertido e: ", convertido;
+       imprima "\n";
+fimprog

@@ -1,0 +1,26 @@
+#Entrar com a sigla do estado de uma pessoa e imprimir uma das mensagens:
+#• carioca
+#• paulista
+#• mineiro
+#• outros estados 
+prog algoritmo105
+       string sigla;
+       imprima "\nDigite a sigla do seu estado, em letras maiusculas: ";
+       leia sigla;
+       se (sigla == "RJ")
+       {
+         imprima "\nVoce e CARIOCA \n\n";
+       }
+       se (sigla == "SP")
+       {
+        imprima "\nVoce e PAULISTA \n\n";
+       }
+       se (sigla == "MG")
+       {
+        imprima "\nVoce e MINEIRO \n\n";
+       }
+       se (sigla <> "SP" && sigla <> "RJ" && sigla <> "MG")
+       {
+        imprima "\nVoce e de OUTROS estados\n\n";
+       }
+fimprog

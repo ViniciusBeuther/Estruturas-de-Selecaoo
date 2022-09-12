@@ -1,0 +1,12 @@
+prog algoritmo90
+       int n1;
+       imprima "\nDigite um numero: ";
+       leia n1;
+       se (n1 > 20){
+          imprima "\nO numero digitado e: ", n1, "\n";
+       }
+       se (n1 <= 20){
+          imprima "O numero digitado e menor que 20 \n";
+       }
+       
+fimprog

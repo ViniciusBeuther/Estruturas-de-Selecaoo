@@ -1,0 +1,20 @@
+#Entrar com dois números e imprimir o menor número (suponha números diferentes). 
+prog algoritmo112
+     real n1, n2;
+     imprima "\nDigite um numero: ";
+     leia n1;
+     imprima "\nDigite um numero diferente: ";
+     leia n2;
+     se(n1 > n2){
+     imprima "\nO menor numero e: ", n2;
+     imprima "\n";
+     }
+     se(n1 < n2){
+     imprima "\nO menor numero e: ", n1;
+     imprima "\n";     
+     }
+     se(n1 == n2){
+     imprima "\nNumeros INVALIDOS, valores digitados sao iguais!";
+     imprima "\n";     
+     }
+fimprog

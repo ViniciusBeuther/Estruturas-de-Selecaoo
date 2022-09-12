@@ -1,0 +1,14 @@
+prog algoritmo91
+     int n1, n2;
+     imprima "\nDigite um numero: ";
+     leia n1;
+     imprima "\nDigite outro numero: ";
+     leia n2;
+     se (n1+n2 > 10){
+        imprima "\nO valor da soma e: ", n1+n2, "\n";
+     }
+     se (n1+n2 <= 10){
+        imprima "\nO valor da soma e menor do que 10.";
+     }
+     imprima "\n";
+fimprog

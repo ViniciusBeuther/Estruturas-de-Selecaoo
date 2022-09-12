@@ -1,0 +1,13 @@
+prog algoritmo93
+       real n1;
+       imprima "\nDigite um valor: ";
+       leia n1;
+       se (n1 >= 0.0)
+       {
+          imprima "Numero digitado e positivo. Sua raiz quadrada e: ", raiz(n1), "\n\n";
+       }
+       se (n1 < 0.0)
+       {
+          imprima "\nNumero digitado e negativo. Seu quadrado e: ", n1^2, "\n\n";
+       }
+fimprog

@@ -1,0 +1,18 @@
+#COnstruir um algoritmo que indique se o numero digitado esta compreendido entre 20 e 90 ou nao
+prog algoritmo101
+       int n1;
+       imprima "\nDigite um numero: ";
+       leia n1;
+       se (n1 > 20 && n1 < 90)
+       
+       {
+       imprima "\nNumero esta no intervalo!\n\n";
+       
+       }
+       se (n1 < 20 || n1> 90)
+       {
+        imprima "\nNumero nao esta no intervalo";
+       }
+       imprima "\n";
+       
+fimprog

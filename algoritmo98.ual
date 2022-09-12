@@ -1,0 +1,16 @@
+#Entrar com o salario e valor de parcela, permitir o maximo de emprestimo com a parcela de ate 30% do salario.
+prog algoritmo98
+       real bruto, parcela;
+       imprima "\nDigite seu salario bruto: ";
+       leia bruto;
+       imprima "\nDigite o valor que deseja pagar na prestacao: ";
+       leia parcela; 
+       se (parcela > bruto*0.30)
+       {
+        imprima "\nEmprestimo NAO aprovado \n\n";
+       }
+       se (parcela <= bruto*0.30)
+       {
+        imprima "\nValor aprovado\n\n";
+       }
+fimprog

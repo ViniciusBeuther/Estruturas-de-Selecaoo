@@ -1,0 +1,8 @@
+#Ler um numero real e imprimir a terça parte deste número.
+prog algoritmo38
+     real n1;
+     imprima "Digite um numero: ";
+     leia n1;
+     imprima "\nA terca parte desse numero e: ", n1/3, "\n\n";
+
+fimprog

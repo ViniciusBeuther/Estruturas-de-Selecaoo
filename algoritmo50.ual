@@ -1,0 +1,19 @@
+#Entrar com a base e a altura de um retângulo e imprimir a seguinte saída:
+#perímetro:
+#area:
+#diagonal :
+prog algo50
+       real base, altura, area, peri, diag;
+       imprima "Digite a altura do retangulo (cm): ";
+       leia altura;
+       imprima "\nDigite a base do retangulo (cm): ";
+       leia base;
+       area <- base * altura;
+       peri <- 2*(base+altura);
+       diag <- raiz(altura^2 + base^2);
+       imprima "\nArea: ", area;
+       imprima "\nPerimetro: ", peri;
+       imprima "\nDiagonal: ", diag;
+       imprima "\n";
+
+fimprog

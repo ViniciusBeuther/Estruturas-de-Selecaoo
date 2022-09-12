@@ -1,0 +1,17 @@
+#Ler um número inteiro de 4 casas e imprimir se é ou não múltiplo de quatro o número formado pelos algarismos que estão nas casas das unidades de milhar e das
+#centenas. 
+prog algoritmo100
+       int n1, m, c;
+       imprima "\nDigite um numero na casa de milhar: ";
+       leia n1;
+       m <- n1 div 100;
+       se (m%4 == 0)
+       {
+       imprima "\nValor multiplo de 4. \n\n";
+       }
+       se (m%4 <> 0)
+       {
+        imprima "\nNumero nao e multiplo de 4. \n\n";
+       }
+
+fimprog

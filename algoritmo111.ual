@@ -1,0 +1,22 @@
+#Entrar com dois números e imprimir o maior número (suponha números diferentes).
+prog algoritmo111
+       real n1, n2;
+       imprima "\nDigite um numero: ";
+       leia n1;
+       imprima "\nDigite outro numero: ";
+       leia n2;
+       se (n1 > n2)
+       {
+        imprima "\nO maior numero e: ", n1;
+        imprima "\n";
+       }
+       se (n2 >n1)
+       {
+          imprima "\nO maior numero e ", n2;
+          imprima "\n";
+       }
+       se (n1 == n2)
+       {
+          imprima "\nValores invalidos, os numeros sao iguais!\n";
+       }       
+fimprog

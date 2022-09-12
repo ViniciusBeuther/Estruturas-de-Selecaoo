@@ -1,0 +1,12 @@
+#Fazer um algoritmo recebe a conta da lanchonete e quantidade de amigos e mostre ao final que valor que cada amigo deve pagar.
+prog extra01
+       real conta, parte;
+       int amigos;
+       imprima "Digite o valor da conta a pagar: ";
+       leia conta;
+       imprima "\nDigite o numero de amigos: ";
+       leia amigos;
+       parte <- conta / amigos;
+       imprima "\n\nO valor total a ser pago por cada um e de : ", parte, " Reais\n\n";
+     
+fimprog

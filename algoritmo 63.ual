@@ -1,0 +1,16 @@
+#Criar um algoritmo que efetue o cálculo do salário líquido de um professor. 
+#Os dados fornecidos serão: valor da hora aula, número de aulas dadas no mês e percentual de desconto do INSS.
+prog algoritmo63
+       real vhora, naula, desconto;
+       real liq, bruto;
+       imprima "\nDigite o valor da hora: ";
+       leia vhora;
+       imprima "\nDigite o numero de aulas: ";
+       leia naula;
+       imprima "\nDigite o % de desconto de INSS: ";
+       leia desconto;
+       bruto <- (vhora * naula);
+       liq <- bruto - (bruto*(desconto/100));
+       imprima "\nO salario liquido e de: ", formatar(liq,2), " reais\n\n";
+       
+fimprog 

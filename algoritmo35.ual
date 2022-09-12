@@ -1,0 +1,14 @@
+#Ler nome, endereço e telefone e imprimi-los.
+prog algoritmo35
+       string nome, end, phone;
+       imprima "Digite o seu nome: ";
+       leia nome;
+       imprima "\nDigite o seu enderco: ";
+       leia end;
+       imprima "\nDigite seu numero de telefone: ";
+       leia phone;
+       imprima "\n\n";
+       imprima "Suas informacoes: \n";
+       imprima "Nome: ", nome, "\nEndereco: ", end, "\nTelefone: ", phone;
+       imprima "\n\n";
+fimprog
