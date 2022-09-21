@@ -1,0 +1,61 @@
+#Ler três números, os possíveis lados de um triângulo, e imprimir a classificação segundo os lados.
+prog algoritmo123
+     int a, b, c;
+     string tipo;
+     imprima "\nDigite o lado 1: ";
+     leia a;
+     imprima "\nDigite o lado 2: ";
+     leia b;
+     imprima "\nDigite o lado 3: ";
+     leia c;
+     
+     #VERIFICANDO SE E UM TRIANGULO
+     #CASO SEJA UM TRIANGULO
+     se (a > abs(b-c) && a < b+c || b > abs(a-c) && b < a+c || c > abs(b-a) && c < b+a)
+     {         
+     
+     
+     #VERIFICAR LADOS
+     se (a <> b || a == b || b <> c)
+     {
+        #CONDICAO PARA EQUILATERO
+        se (a == b && b == c)
+        {
+         tipo <- "Equilatero";
+        }
+        #CONDICAO DE A=B
+        se (a == b && b <> c)
+        {
+          tipo <- "Isoceles";
+        }
+        #CONDICAO DE B=C
+        se (b == c && b <> a)
+        {
+         tipo <- "Isoceles";
+        }
+        
+        #CONDICAO DE A=C
+        se (a == c && c <> b)
+        {
+         tipo <- "Isoceles";
+        }
+     }
+     
+     #CASO OS LADOS a, b e c sejam todos diferentes
+     se (a <> b && b <> c && a <> c)
+        {
+        tipo <- "Escaleno";
+        }
+     #IMPRIMIR TIPO DE TRIANGULO
+     imprima "\nO triangulo e do tipo: ", tipo;
+     
+     }
+     
+     #CASO NAO SEJA UM TRIANGULO
+     senao
+     {
+      imprima "\nNAO PODE SER UM TRIANGULO! \n";
+     }
+     imprima "\n";
+     
+fimprog

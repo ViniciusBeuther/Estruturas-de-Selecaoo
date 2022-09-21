@@ -1,0 +1,121 @@
+#ALGORITMO 147
+#Criar um algoritmo que informe a quantidade total de calorias de uma refeição a
+#partir da escolha do usuário que deverá informar o prato, a sobremesa e bebida
+#(veja a tabela a seguir). 
+#       -PRATO 
+#       -VEGETARIANO 180 cal
+#       -PEIXE 230 cal
+#       -FRANGO 250 cal
+#       -CARNE 350 cal
+              
+#              -SOBREMESA
+#              -ABACAXI 75 cal
+#              -SORVETE DIET  110 cal
+#              -MOUSSE DIET 170 cal
+#              -MOUSSE CHOCOLATE 200 cal
+              
+#      -BEBIDA
+#       -CHA 20 cal
+#       -SUCO DE LARANJA 70 cal
+#       -SUCO DE MELAO 100 cal
+#       -REFRIGERANTE DIET 65 cal
+       
+prog algoritmolab3
+       string prato, bebida, sobremesa;
+       int total, p, s, b;
+       
+       imprima "--BEM VINDO AO RESTAURANTE DO VINI--\n\n";
+       imprima "-PRATOS PRINCIPAIS\n";
+       imprima "*VEGETARIANO, PEIXE, FRANGO E CARNE\n";
+       imprima "\n-BEBIDAS\n";
+       imprima "*CHA, SUCO DE LARANJA, SUCO DE MELAO E REFRIGERANTE DIET\n";
+       imprima "\n-SOBREMESAS\n";
+       imprima "*ABACAXI, SORVETE DIET, MOUSSE DIET E MOUSSE DE CHOCOLATE\n";
+       
+       imprima "\nDigite qual prato principal voce deseja (letras maiusculas): ";
+       leia prato;
+       imprima "\nDigite qual bebida voce deseja (letras maiusculas): ";
+       leia bebida;
+       imprima "\nDigite qual sobremesa voce deseja (letras maiusculas): ";  
+       leia sobremesa;
+       
+       se (prato == "VEGETARIANO" || prato == "PEIXE" || prato == "FRANGO" || prato == "CARNE")
+       {
+          #COLETANDO CALORIAS DOS PRATOS PRINCIPAIS
+          
+                 se (prato == "VEGETARIANO")
+                 {
+                  p <- 180;
+                 }
+                 
+                 se (prato == "PEIXE")
+                 {
+                  p <- 230;
+                 }
+                 
+                 se (prato == "FRANGO")
+                 {
+                  p <- 250;
+                 }
+                 
+                 se (prato == "CARNE")
+                 {
+                  p <- 350;
+                 }
+                 
+       }
+       
+        se (bebida == "CHA" || bebida == "SUCO DE LARANJA" || bebida == "SUCO DE MELAO" || bebida == "REFRIGERANTE DIET")
+       {
+          #COLETANDO CALORIAS DAS BEBIDAS
+          
+                 se (bebida == "CHA")
+                 {
+                  b <- 20;
+                 }
+                 
+                 se (bebida == "SUCO DE LARANJA")
+                 {
+                  b <- 70;
+                 }
+                 
+                 se (bebida == "SUCO DE MELAO")
+                 {
+                  b <- 100;
+                 }
+                 
+                 se (bebida == "REFRIGERANTE DIET")
+                 {
+                  b <- 65;
+                 }
+                 
+       }
+       
+       se (sobremesa == "ABACAXI" || sobremesa == "SORVETE DIET" || sobremesa == "MOUSSE DIET" || sobremesa == "MOUSSE DE CHOCOLATE")
+       {
+          #COLETANDO CALORIAS DAS SOBREMESAS
+          
+                 se (sobremesa == "ABACAXI")
+                 {
+                  s <- 75;
+                 }
+                 
+                 se (sobremesa == "SORVETE DIET")
+                 {
+                  s <- 110;
+                 }
+                 
+                 se (sobremesa == "MOUSSE DIET")
+                 {
+                  s <- 170;
+                 }
+                 
+                 se (sobremesa == "MOUSSE DE CHOCOLATE")
+                 {
+                  s <- 200;
+                 }
+       }
+       
+       imprima "\n\n\n\t\t\tO TOTAL DE CALORIAS DE SUA REFEICAO FOI DE: ", p+b+s, " cal\n\n\n";    
+
+fimprog

@@ -1,0 +1,30 @@
+#Construa um algoritmo que calcule o peso ideal de uma pessoa. 
+#Peso ideal homem: (72,7 x Altura) - 58
+#Peso ideal mulher (62,1 x Altura) - 44,7
+
+prog algoritmolab2
+       real altura;
+       string sexo;
+       imprima "\nDigite a sua altura: ";
+       leia altura;
+       imprima "\nDigite o seu sexo (M ou F): ";
+       leia sexo;
+       
+       #CASO SEJA HOMEM
+       se (sexo == "M")
+       {
+       imprima "Voce e HOMEM. Seu peso  ideal e de: ", formatar((72.7 * altura) - 58.0, 2), " Kg\n";
+       }
+       
+       #CASO SEJA MULHER
+       se (sexo == "F")
+       {
+       imprima "Voce e MULHER. Seu peso  ideal e de: ", formatar ((62.1 * altura) - 44.7, 2), " Kg\n";
+       }
+       
+       se (sexo <> "M" && sexo <> "F")
+       {
+        imprima "\nO sexo digitado e INVALIDO!";
+       }
+        imprima "\n\n";
+fimprog

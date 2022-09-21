@@ -1,0 +1,45 @@
+#Um banco concedera um credito especial aos seus clientes, variavel com o saldo medio do ultimo ano. Faça um algoritmo que leia o saldo medio de um cliente
+#e calcule o valor do crédito de acordo com a tabela abaixo. Mostre uma mensagem informando o saldo medio e o valor do credito
+
+prog algoritmolab3
+       real saldo;
+       
+       imprima "Digite o seu saldo medio no banco: ";
+       leia saldo;
+       
+       #CASO SALDO SEJA POSITIVO
+       se (saldo >= 0.0)
+       {
+              #CASO SALDO <= 200
+              se (saldo <= 200.0 && saldo >= 0.0)
+              {
+               imprima "\nVoce NAO conseguiu um emprestimo pois seu saldo e muito baixo! \n ";
+              }
+              
+              #CASO SALDO >= 200 e <= 400
+              se (saldo >= 201.0 && saldo <= 400.0)
+              {
+              imprima "\nVoce conseguiu um emprestimo de ate ", formatar ((saldo * 0.20), 2), " reais\n";
+              }
+              
+              #CASO SALDO >=401 e <=600
+              se (saldo >= 401.0 && saldo <= 600.0)
+              {              
+                 imprima "\nVoce conseguiu um emprestimo de ate ", formatar ((saldo * 0.30), 2), " reais\n";      
+              }
+              
+              #CASO SALDO >= 601
+              se (saldo >=601.0)
+              {
+              imprima "\nVoce conseguiu um emprestimo de ate ", formatar ((saldo * 0.40), 2), " reais\n";
+              }
+       }
+       
+       senao 
+       {
+        imprima "\nSeu saldo e negativo!";
+        imprima "\n";
+       }
+                imprima "\nSeu saldo: ", saldo, "\n\n";
+
+fimprog

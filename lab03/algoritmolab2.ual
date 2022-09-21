@@ -1,0 +1,25 @@
+#Fazer um programa que le a primeira letra do nome e diz se tem direito ou nao a 30% de desconto no restaurante    ( A, D, M, S)
+
+prog algoritmolab2
+       string nome, inicial;
+       real conta;
+       
+       imprima "Digite qual e o seu nome para ver se tem direito a promocao dessa semana: ";
+       leia nome; 
+       imprima "\nDigite o valor que deu sua conta (R$): ";
+       leia conta;
+              
+       inicial <- strprim(nome);
+       
+               se (inicial == "A" || inicial == "D" || inicial == "M" || inicial == "S")
+               {
+                imprima "\n\nParabens, voce ganhou o desconto! \n";
+                imprima "O valor de sua conta com 30% de desconto e: ",  conta * 0.70, " reais\n\n";
+               }
+               
+               senao
+               {
+                imprima "Que pena, voce nao ganhou o desconto! \n";
+               }                 
+
+fimprog

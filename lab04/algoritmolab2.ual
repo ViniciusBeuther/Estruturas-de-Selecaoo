@@ -1,0 +1,52 @@
+#ALGORITMO 146
+#Fazer um algoritmo que leia o trajeto em quilômetros, o tipo do carro e informe
+#o consumo estimado de combustível, sabendo-se que um carro tipo C faz 12 km
+#com um litro de gasolina, um tipo B faz 9 km e o tipo A, 8 km por litro. 
+
+prog algoritmolab2
+       real km, consumo, litros;
+       string tipo;
+       
+       imprima "Digite a distancia do trajeto (km): ";
+       leia km;
+       
+       imprima "\nDigite o tipo do carro, (A = 12km/L | B = 9 km/L | C = 8 km/L): ";
+       leia tipo;
+         se (tipo == "A" || tipo == "B" || tipo == "C")
+         { 
+            #Type A
+             se (tipo == "A")
+            {
+            litros <- km / 12;
+            }
+            
+            #Type B
+            se (tipo == "B")
+            {
+            litros <- km / 9;
+            }
+            
+            #Type C
+            se (tipo == "C")
+            {
+            litros <- km / 8;
+            }
+            se (tipo <> "A" && tipo <> "B" && tipo <> "C") 
+            {
+             imprima "\nERRO! TiPO INEXISTENTE!\n";
+            }  
+       
+       imprima "\n\t\t\t\tDADOS DO TRAJETO\n";
+       imprima "\n\t\tO consumo foi de: ", formatar (litros, 2), " Litros de gasolina\n"; 
+       imprima "\t\tCusto de gasolina (R$4,30 o litro): R$", formatar (litros*4.30, 2), "\n\n"; 
+            
+          }
+          
+          senao
+          {
+           imprima "\nERRO! O TIPO DIGITADO E INVALIDO\n\n";
+          } 
+            
+     
+
+fimprog

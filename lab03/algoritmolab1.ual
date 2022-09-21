@@ -1,0 +1,39 @@
+#Monte uma calculadora
+prog algoritmolab1
+       real n1, n2;
+       string operacao;
+       imprima "Digite um numero: ";
+       leia n1;
+       imprima "\nDigite outro numero: ";
+       leia n2;
+       imprima "\nDigite qual operacao deseja (soma ou +, subtracao ou -, multiplicacao ou * e divisao ou /, caso queira raiz digite raiz: ";
+       leia operacao;
+     
+            se (operacao == "soma" || operacao == "+")
+            {
+             imprima "A soma dos valores digitados e: ", n1 + n2, "\n";
+            }
+            
+                             
+            se (operacao == "subtracao" || operacao == "-")
+            {
+             imprima "A subtracao dos valores digitados e: ", n1 - n2, "\n";
+            }
+            
+            se (operacao == "multiplicacao" || operacao == "*")
+            {
+             imprima "A multiplicacao dos valores digitados e: ", n1 * n2, "\n";
+            }
+            
+            se (operacao == "divisao" || operacao == "/")
+            {
+             imprima "A divisao dos valores digitados e: ", n1 / n2, "\n";
+            }
+            
+            se (operacao == "raiz")
+            {
+             imprima "A raiz quadrada dos valores digitados e: ", raiz(n1), " e ", raiz(n2), "\n";
+            }
+            
+
+fimprog

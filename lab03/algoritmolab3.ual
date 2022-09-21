@@ -1,0 +1,57 @@
+#Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
+#para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o
+#mesmo número de pontos, criar um algoritmo que informe se uma equipe foi
+#classificada, de acordo com a seguinte especificação:
+#  • ler os pontos obtidos por cada jogador da equipe;
+#  • mostrar esses valores em ordem decrescente;
+#  • se a soma dos pontos for maior do que 100, imprimir a média aritmética
+#  entre eles; senão, imprimir a mensagem "Equipe desclassificada". 
+
+prog algoritmolab3
+     int a, b, c, aux;
+     imprima "Digite a pontuacao do Arqueiro 01: ";
+     leia a;
+     imprima "Digite a pontuacao do Arqueiro 02: ";
+     leia b;
+     imprima "Digite a pontuacao do Arqueiro 03: ";
+     leia c;
+     
+     #Mostrando pontos em ordem decrescente
+           se (a > b)
+           {
+             aux <- a;
+             a <- b;
+             b <- aux;
+           }
+           se (a > c)
+           {
+            aux <- a;
+            a <- c;
+            c <- aux;
+           }
+           
+           se (b > c)
+           {
+           aux <- b;
+           b <- c;
+           c <- aux;
+           }
+           imprima "--PONTOS DA SUA EQUIPE--\n";
+           imprima "          ", c, "       \n";
+           imprima "          ", b, "       \n";
+           imprima "          ", a, "       \n";
+           
+           se ((a + b + c) > 100)
+           {
+            imprima "\n\nPARABENS! SUA EQUIPE FOI CLASSIFICADA!\n\n";
+           }
+           
+           senao
+           {
+            imprima "\nQUE PENA! SUA EQUIPE FOI DESCLASSIFICADA!\n\n";
+           }
+     
+     
+     
+     
+fimprog

@@ -1,0 +1,47 @@
+#A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome do
+#livro que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem dez
+#dias para devolver o livro e o aluno só três dias.
+#Nome do livro
+#Tipo de usuário:
+#Total de Dias:
+
+prog algoritmolab1
+       string user, livro;
+       int tipo;
+       imprima "Digite (P) para professor e (A) para aluno: ";
+       leia user;
+       
+       imprima "\nDigite o nome do livro que deseja emprestar: ";
+       leia livro;
+       
+            #if user = teacher
+            se (user == "P")
+            {
+             user <- "Professor";
+             tipo <- 10;
+             imprima "\n---DADOS---";
+             imprima "\nNome do Livro: ", livro;
+             imprima "\nTipo de usuario: ", user;
+             imprima "\nTotal de dias: ", tipo;
+             imprima "\n\n";
+            }
+            
+            #if user = student
+            se (user == "A")
+            {
+             user <- "Aluno";
+             tipo <- 3;
+             imprima "\n---DADOS---";
+             imprima "\nNome do Livro: ", livro;
+             imprima "\nTipo de usuario: ", user;
+             imprima "\nTotal de dias: ", tipo;
+             imprima "\n\n";
+            } 
+            #exit         
+            senao 
+            {
+             imprima "\nERRO! OPCAO INVALIDA!\n";
+            }
+            
+
+fimprog
