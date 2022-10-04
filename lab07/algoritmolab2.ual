@@ -1,0 +1,43 @@
+#algoritmolab2
+#CALCULAR AUMENTO DE ACORDO COM PROFISSAO: GERENTE (10%) ENGENHEIRO (20%) E TECNICO (30%) DEMAIS (40%)
+prog algoritmolab2
+       real salario, novosalario;
+       int profissao;
+       
+       imprima "\nPROFISSOES ";
+       imprima "\n-GERENTE (101)\n-ENGENHEIRO (102) \n-TECNICO (103)\n";
+       imprima "\nDigite sua profissao: ";
+       leia profissao;
+       
+       imprima "\nDigite seu salario: ";
+       leia salario;
+       
+       se (profissao <> 101 && profissao <> 102 && profissao <> 103)
+       {
+        novosalario <- salario * 1.4;
+       }
+       senao
+       {
+        se (profissao == 101)
+           {
+           novosalario <- salario * 1.1;
+           }
+           
+        se (profissao == 102)
+           {
+           novosalario <- salario * 1.2;
+           }
+           
+       se (profissao == 103)
+          {
+          novosalario <- salario * 1.3;
+          }
+       }
+       
+       imprima "\n\n\nSALARIO ATUAL: R$", salario;
+       imprima "\nSALARIO COM AUMENTO: R$", novosalario;
+       imprima "\nDIFERENCA SALARIAL: R$", novosalario - salario;
+       imprima"\n\n";
+       
+
+fimprog

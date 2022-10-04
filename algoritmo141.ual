@@ -1,0 +1,63 @@
+#ALGORITMO 141
+#Criar um algoritmo que leia o nome e o total de pontos de três finalistas de um 
+#campeonato de pingue-pongue e exibir a colocação da seguinte forma: 
+#Vencedor: --------------------XXXX ptos  
+#Segundo colocado: ----- - - -XXXX ptos  
+#Terceiro colocado: ------- XXXX ptos 
+
+prog algoritmo141
+     string p1, p2, p3, auxs;
+     int a, b ,c, aux;
+     
+     imprima "\nNome 01: ";
+     leia p1;
+     imprima "\nNome 02: ";
+     leia p2;
+     imprima "\nNome 03: ";
+     leia p3;
+     
+     imprima "\nPontos Nome 01: ";
+     leia a;
+     
+     imprima "\nPontos Nome 02: ";
+     leia b;
+     
+     imprima "\nPontos Nome 03: ";
+     leia c;
+     
+          se (a > b)
+          {
+            aux <- a;
+            a <- b;
+            b <- aux;
+            auxs <- p1;
+            p1 <- p2;
+            p2 <- auxs;
+            
+          } 
+          
+          se (a > c)
+          {
+          aux <- a;
+          a <- c;
+          c <- aux;
+          auxs <- p1;
+          p1 <- p3;
+          p3 <- auxs;
+          } 
+          
+          se (b > c)
+          {
+          aux <- b;
+          b <- c;
+          c <- aux;
+          auxs <- p2;
+          p2 <- p3;
+          p3 <- auxs;
+          }   
+          
+          imprima "\nPRIMEIRO LUGAR: ", p3, " COM ", c, " PONTOS \n";
+          imprima "\nSEGUNDO LUGAR: ", p2, " COM ", b, " PONTOS \n";
+          imprima "\nTERCEIRO LUGAR: ", p1, " COM ", a, " PONTOS \n\n";
+
+fimprog

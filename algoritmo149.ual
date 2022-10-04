@@ -1,0 +1,53 @@
+#Um comerciante calcula o valor da venda, tendo em vista a tabela a seguir: 
+#VALOR DA COMPRA VALOR DA VENDA
+
+          #Valor< R$ 10,00 lucro de 70% 
+          #R$1 O, 00 $ valor < R$ 30,00 lucro de 50% 
+          #R$30,00 $ valor< R$ 50,00 lucro de 40% 
+          #Valor ~ R$50,00 lucro de 30% 
+#Criar o algoritmo que possa entrar com nome do produto e valor da compra e imprimir o nome do produto e o valor da venda.
+
+prog algoritmo149
+       string produto;
+       real valor, venda;
+       
+       imprima "\nQual o produto: ";
+       leia produto;
+       
+       imprima "\nQual o valor do produto: ";
+       leia valor;
+       
+            se (valor >= 0.0)
+            {
+                      se (valor < 10.0)
+                      {
+                       venda <- valor * 1.7;
+                      }
+                      
+                      se (valor >= 10.0 && valor < 30.0)
+                      {
+                       venda <- valor * 1.5;
+                      }
+                      
+                      se (valor >= 30.0 && valor < 50.0)
+                      {
+                       venda <- valor * 1.4;
+                      }
+                      
+                      se (valor >= 50.0)
+                      {
+                       venda <- valor * 1.3;
+                      }
+                      
+                      imprima "\n---------------------------------------------------";
+                      imprima "\n\nPRODUTO: ", produto;
+                      imprima "\nVALOR DE VENDA: R$", formatar(venda,2), " REAIS\n\n";
+                      imprima "\n---------------------------------------------------\n";
+                      
+            }
+            senao
+            {
+             imprima "\nDIGITE UM VALOR POSITIVO!!!\n\n";
+            }
+
+fimprog 

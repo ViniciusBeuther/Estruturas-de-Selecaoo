@@ -1,0 +1,71 @@
+#ALGORITMO152
+#Criar um algoritmo que a partir da idade e peso do paciente calcule a dosagem de 
+#determinado medicamento e imprima a receita informando quantas gotas do 
+#medicamento o paciente deve tomar por dose. 
+
+#Considere que o medicamento em 
+#questão possuí 500 mg por m/, e que cada m/ corresponde a 20 gotas. 
+#• Adultos ou adolescentes desde 12 anos, inclusive, se tiverem peso igual ou 
+#acima de 60 quilos devem tomar 1000 mg; com peso abaixo de 60 quilos devem 
+#tomar 875 mg. 
+#• Para crianças e adolescentes abaixo de 12 anos é dosagem é calculada pelo 
+#peso corpóreo conforme a tabela a seguir:
+
+prog algoritmo152
+       int idade;
+       real peso, gotas;
+       
+       imprima "\nDigite sua idade: ";
+       leia idade;
+       imprima "\nDigite seu peso: ";
+       leia peso;
+       
+       se(idade < 0 || peso <= 0.0)
+       {
+       imprima "\nENTRADA INVALIDA!\n\n";
+       }
+       senao
+       {
+            se (idade >= 12)
+            {
+                      se (peso >= 60.0)
+                      {
+                       gotas <- 1000.0/25.0;
+                      }
+                      senao
+                      {
+                      gotas <- 875.0/25.0;
+                      }
+            }
+            
+            se (idade < 12)
+            {
+                      se (peso >= 5.0 && peso <= 9.0)
+                      {
+                      gotas <- 125.0/25.0;
+                      }
+                      
+                      se (peso > 9.0 && peso <= 16.0)
+                      {
+                      gotas <- 250.0/25.0;
+                      }
+                      
+                      se (peso > 16.0 && peso <= 24.0)
+                      {
+                      gotas <- 375/25.0;
+                      }
+                      
+                      se(peso > 24.0 && peso <= 30.0)
+                      {                             
+                      gotas <- 500.0/25.0;
+                      }
+                      
+                      se(peso > 30.0)
+                      {
+                      gotas <- 750.0/25.0;
+                      }
+            }
+               imprima "\nGOTAS: ", gotas, "\n\n";
+        }    
+         
+fimprog

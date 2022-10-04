@@ -1,0 +1,32 @@
+#algoritmoLAB07
+
+prog algoritmolab07
+       
+       int resto, total, nota100, nota50, nota10, nota5, nota1;
+       
+       imprima "\nDigite o valor a ser sacado: ";
+       leia total;
+       
+       se (total < 0)
+       {
+        imprima "\nVALOR NEGATIVO, FAVOR DIGITAR OUTRO VALOR!\n\n";
+       }  
+       
+       senao 
+       {   
+            nota100 <- total div 100;
+            nota50 <-  (total % 100) div 50;
+            nota10 <- (total % 50) div 10;
+            nota5 <- (total % 10) div 5;
+            nota1 <- (total % 5) div 1;
+                             
+       imprima "Notas de 100: ", nota100;
+       imprima "\nNotas de 50: ", nota50;
+       imprima "\nNotas de 10: ", nota10;
+       imprima "\nNotas de 5: ", nota5;
+       imprima "\nNotas de 1: ", nota1;
+       imprima "\n\n";
+       
+       }
+       
+fimprog

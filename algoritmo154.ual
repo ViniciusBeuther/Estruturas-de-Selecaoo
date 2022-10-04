@@ -1,0 +1,67 @@
+#ALGORITMO154
+# polícia rodoviária resolveu fazer cumprir a lei e cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, criar um algoritmo que, a partir 
+#da leitura da placa do carro, informe o mês em que o emplacamento deve serrenovado.
+
+prog algoritmo154
+       string placa, data,  mes;
+       
+       imprima "\nDigite sua placa: ";
+       leia placa;
+       mes <- strult(placa);       
+       se (mes <> "0" && mes <> "1" && mes <>"2" && mes <> "3" && mes <> "4" && mes <> "5" && mes <> "6" && mes <> "7" && mes <> "8" && mes <> "9")
+       {
+        imprima "DIGITE UM NUMERO! \n\n";
+        
+       }
+       
+       senao
+       {
+                se (mes == "0")
+                {
+                data <- "JANEIRO";
+                }
+                
+                se (mes == "1")
+                {
+                data <- "FEVEREIRO";
+                }
+                
+                se (mes == "3")
+                {
+                data <- "MARCO";
+                }
+                
+                se (mes == "4")
+                {
+                data <- "ABRIL";
+                }
+                
+                se (mes == "5")
+                {
+                data <- "MAIO";
+                }
+                
+                se (mes == "6")
+                {
+                data <- "JUNHO";
+                }
+                
+                se (mes == "7")
+                {
+                data <- "JULHO";
+                }
+                
+                se (mes == "8")
+                {
+                data <- "AGOSTO";
+                }
+                
+                se (mes == "9")
+                {
+                data <- "SETEMBRO";
+                }
+                
+          imprima "\nVENCIMENTO: ", data, "\n\n";
+       }
+
+fimprog 

@@ -1,0 +1,101 @@
+#Criar um algoritmo que leia o destino do passageiro, se a viagem inclui retorno 
+#(ida e volta) e informar o preço da passagem conforme a tabela a seguir
+
+prog algoritmo148
+       int tipo, seletor;
+       real total;
+       string destino;
+       
+       imprima "\n------DESTINOS-----\n";
+       imprima "(1) REGIAO NORTE \n(2) REGIAO NORDESTE \n(3) REGIAO CENTRO-OESTE \n(4) REGIAO SUL \n";
+       imprima "\nDigite o destino desejado: ";
+       leia seletor;
+       
+       imprima "\nDeseja passagem somente de ida (1) ou ida e volta (2): ";
+       leia tipo;
+       
+            se (tipo == 1)
+            {
+                     #Regiao Norte
+                     se (seletor == 1)
+                     {
+                      total <- 500.0;
+                      destino <- "NORTE";
+                     }
+                     
+                     #Regiao Nordeste
+                     se (seletor == 2)
+                     {
+                      total <- 350.0;
+                      destino <- "NORDESTE";
+                     }
+                     
+                     #Regiao Centro-Oeste
+                     se (seletor == 3)
+                     {
+                      total <- 350.0;
+                      destino <- "CENTRO-OESTE";
+                     }
+                     
+                     #Regiao Sul
+                     se (seletor == 4)
+                     {
+                      total <- 300.0;
+                      destino <- "SUL";
+                     }
+                     
+                              imprima "\n\t\t\tParabens, a seguir voce pode ver o valor do seu pacote: \n";
+                              imprima "\t\t\t\t-SEU DESTINO: ", destino;
+                              imprima "\n\t\t\t\t-CUSTO DE SUA VIAGEM: R$", total, " Reais\n\n";
+                     
+            }
+            
+            se (tipo == 2)
+               {
+                                     #Regiao Norte
+                     se (seletor == 1)
+                     {
+                      total <- 900.0;
+                      destino <- "NORTE";
+                     }
+                     
+                     #Regiao Nordeste
+                     se (seletor == 2)
+                     {
+                      total <- 650.0;
+                      destino <- "NORDESTE";
+                     }
+                     
+                     #Regiao Centro-Oeste
+                     se (seletor == 3)
+                     {
+                      total <- 600.0;
+                      destino <- "CENTRO-OESTE";
+                     }
+                     
+                     #Regiao Sul
+                     se (seletor == 4)
+                     {
+                      total <- 550.0;
+                      destino <- "SUL";
+                     }
+                     
+                     
+                              imprima "\n\t\t\tParabens, a seguir voce pode ver o valor do seu pacote: \n";
+                              imprima "\t\t\t\t-SEU DESTINO: ", destino;
+                              imprima "\n\t\t\t\t-CUSTO DE SUA VIAGEM: R$", total, " Reais\n\n";
+               }
+               
+                 #Saída
+                     se (seletor <> 1 && seletor <> 2 && seletor <> 3 && seletor <> 4 || tipo <> 1 && tipo <> 2)
+                     {
+                      imprima "\nEntrada Invalida!\n";
+                     }
+               
+               
+                    
+            
+            
+            
+       
+fimprog
