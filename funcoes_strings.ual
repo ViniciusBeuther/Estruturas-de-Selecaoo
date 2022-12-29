@@ -1,0 +1,16 @@
+prog teste
+string nome1, nome2;
+       imprima "Digite o seu nome: ";
+       leia nome1;
+       imprima "\nDigite o nome do seu amorzao: ";
+       leia nome2;
+       imprima "\nNumero de letras do primeiro nome: ", strtam(nome1);
+       imprima "\nNumero de letras do nome do meu amorzao: ", strtam(nome2);
+       imprima "\n\n";
+       imprima "A primeira letra do primeiro nome: ", strelem(nome1, 0);
+       imprima "\nA primeira letra do seu amorzao e: ", strelem(nome2,0);
+       imprima "\n\n";
+       imprima "Juntado temos a combinacao perfeita que e: ", strconcat(nome1,nome2);
+       imprima "\n\n";
+
+fimprog

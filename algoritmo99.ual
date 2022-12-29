@@ -1,0 +1,17 @@
+#Ler um número inteiro de 3 casas decimais e imprimir se o algarismo da casa das
+#centenas é par ou ímpar. 
+prog algoritmo99
+       int n1, c, d, u;
+       imprima "\nDigite um numero de 3 casa decimais: ";
+       leia n1;
+       c <- n1 div 100;
+       se (c%2 <> 0)
+       {
+        imprima "\nO valor e impar \n\n";
+       }
+       se (c%2 == 0)
+       {
+        imprima "\nO valor digitado e par \n\n";
+       }
+       
+fimprog

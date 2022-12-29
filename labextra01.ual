@@ -1,0 +1,12 @@
+#Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre a idade desta pessoa, e quantos anos essa pessoa terá em 2040. 
+prog labextra
+       int nascimento, atual, futuro, idade;
+       imprima "Digite seu ano de nascimento: ";
+       leia nascimento;
+       imprima "\nDigite o ano atual: ";
+       leia atual;
+       idade <- atual - nascimento;
+       futuro <- idade + (2040 - atual);
+       imprima "\nA sua idade e : ", idade, " Anos\n";
+       imprima "Sua idade em 2040 sera de: ", futuro, " anos\n\n";
+fimprog

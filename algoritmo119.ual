@@ -1,0 +1,38 @@
+#Entrar com três números e imprimi-los em ordem decrescente (suponha números
+#diferentes). 
+ prog algoritmo119
+     int a, b, c, aux;
+     imprima "Digite um numero: ";
+     leia a;
+     imprima "Digite outro numero: ";
+     leia b;
+     imprima "Digite outro numero: ";
+     leia c;
+     
+     se (a > b)
+     {
+         aux <- a;
+         a <-b;
+         b <- aux;   
+     }
+     
+     se (a > c)
+     {
+          aux <- a;
+          a <- c;
+          c <- aux;
+       
+     }
+     
+     se (b > c)
+     {
+      aux <- b;
+      b <- c;
+      c <- aux;     
+     }
+     
+     
+     imprima "\nOrdem: ", c, " ", b, " ", a, " \n";
+           #A logica e ir realocando os maiores numeros e deixando na ordem que devem ser apresentados, verificando as possibilidades.
+
+fimprog

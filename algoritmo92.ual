@@ -1,0 +1,16 @@
+prog algoritmo92
+     int n1, n2;
+     imprima "\nDigite um numero: ";
+     leia n1;
+     imprima "\nDigite outro numero: ";
+     leia n2;
+     se (n1+n2 > 20)
+     {
+        imprima "\nO valor da soma -5 e: ", n1+n2-5, "\n";
+     }
+     se (n1+n2 <= 20)
+     {
+        imprima "\nO valor da soma e menor do que 20.";
+     }
+     imprima "\n";
+fimprog

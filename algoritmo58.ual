@@ -1,0 +1,16 @@
+#Entrar com valores para xnum 1, xnum2 e xnum3 e imprimir o valor de x, sabendo-se que:
+prog algoritmo58
+       real n1, n2, n3, x;
+       imprima "\nDigite o valor de xnum1: ";
+       leia n1;
+       imprima "\nDigite o valor de xnum2: ";
+       leia n2;
+       imprima "\nDigite o valor de xnum3: ";
+       leia n3;
+       
+       x <- n2/(n3+n1) + 2 * (n1 - n2) + log(64.0)/log(2.0);
+       
+       imprima "\nO valor de x: ",x;
+       imprima "\n";
+
+fimprog 

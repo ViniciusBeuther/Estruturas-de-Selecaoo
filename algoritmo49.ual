@@ -1,0 +1,26 @@
+#Entrar com um nome e imprimir:
+#todo nome:
+#primeiro caractere:
+#ultimo caractere:
+#do primeiro ate o terceiro:
+#quarto caractere:
+#todos menos o primeiro:
+#os dois ultimas:
+
+prog algoritmo49
+       string nome;
+       int n;
+       imprima "Digite o seu nome: ";
+       leia nome;
+       imprima "\nO seu nome: ", nome;
+       imprima "\nA primeira letra: ", strprim(nome);
+       imprima "\n";
+       imprima "\nUltima letra: ", strult(nome);                                      
+       imprima "\nDo primeiro ao terceiro caracter: ", strnprim(nome,3); #strnprim(variavel, ate a letra que deseja ver)
+       imprima "\nO quarto caracter: ", strelem(nome, 3);
+       imprima "\nTodos menoso o primeiro: ", strresto(nome);
+       n <- strtam(nome)-2;          #Diminui o tamanho da stg nome e salva em n
+       imprima "\nSomente as 2 ultimas: ", strnresto(nome, n); #Em (nome, n) o n diz a partir de qual caracter vai mostrar o resto, no caso vai conta 6 e mostrar o resto, "US"
+       imprima "\n";
+
+fimprog

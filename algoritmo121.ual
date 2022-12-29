@@ -1,0 +1,67 @@
+#Efetuar a leitura de cinco números inteiros diferentes e identificar o maior e o menor valor. 
+prog algoritmo121
+       int a, b, c, d, e, maior, menor;
+       imprima "Digite A: ";
+       leia a;
+       imprima "\nDigite B: ";
+       leia b;
+       imprima "\nDigite C: ";
+       leia c;
+       imprima "\nDigite D: ";
+       leia d;
+       imprima "\nDigite E: ";
+       leia e;
+         #Nessa cadeia de SE's sera feita a comparação para achar a maior variavel dentre as digitadas.
+         
+       se (a > b && a>c && a>d && a>e){
+        maior <- a;
+       }
+       
+       se (b > a && b>c && b>d && b>e){
+        maior <- b;
+       }
+       
+       se (c > b && c>a && c>d && c>e){
+        maior <- c;
+       }
+       
+       se (d > b && d>c && d>a && d>e){
+        maior <- d;
+       }
+       
+       se (e > b && e>c && e>d && e>a){
+        maior <- e;
+       }
+       
+       #Aqui sera feito os SE's para descobrir o menor numero
+       
+       se (a < b && a < c && a < d && a < e){
+        menor <- a;
+       }
+       
+       se (b < a && b < c && b < d && b < e){
+        menor <- b;
+       }
+       
+       se (c < b && c < a && c < d && c < e){
+        menor <- c;
+       }
+       
+       se (d < a && d < c && d < b && d < e){
+        menor <- d;
+       }
+       
+       se (e < a && e < b && e < c && e < d){
+        menor <- e;
+       }
+       
+       
+       
+       
+       imprima "\nO maior numero e: ", maior;
+       imprima "\n";
+       
+       imprima "\nO menor numero e: ", menor;
+       imprima "\n\n";
+       
+fimprog

@@ -1,0 +1,20 @@
+#Entrar com dois números inteiros e imprimir a seguinte saída:
+#dividendo:
+#divisor:
+#quociente:
+#resto:
+prog algoritmo40
+       int n1, n2, dividendo, divisor, quociente, resto;
+       imprima "Digite um numero inteiro (dividendo): ";
+       leia n1;
+       imprima "\nDigite mais um numero inteiro (divisor): ";
+       leia n2;
+       quociente <- n1 div n2;
+       resto <- n1%n2;
+       imprima "\nResultados: \nDividendo: ", n1;
+       imprima "\nDivisor: ", n2;
+       imprima "\nQuociente: ", quociente;
+       imprima "\nResto: ", resto;
+       imprima "\n\n";
+
+fimprog 

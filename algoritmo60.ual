@@ -1,0 +1,10 @@
+#Entrar com a razão de uma PA e o valor do J2.termo. Calculare imprimir o 102. termo da série.
+prog algoritmo60
+     real razao, termo1, termo10;
+     imprima "\nDigite a razao: ";
+     leia razao;
+     imprima "\nDigite o primeiro termo: ";
+     leia termo1;
+     termo10 <- termo1 + 9 * razao;
+     imprima "\nO valor do decimo termo: ", formatar(termo10, 2), "\n";
+fimprog

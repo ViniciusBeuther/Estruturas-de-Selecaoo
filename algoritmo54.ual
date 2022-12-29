@@ -1,0 +1,12 @@
+#Criar um algoritmo que calcule e imprima a área de um triângulo. 
+prog algoritmo54
+       real b, h, area;
+       imprima "\nDigite a base: ";
+       leia b;
+       imprima "\nDigite a altura: ";
+       leia h;
+       area <- (b*h)/2;
+       imprima "\nArea do triangulo: ", area;
+       imprima "\n\n";
+       
+fimprog

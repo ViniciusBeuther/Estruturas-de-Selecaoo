@@ -1,0 +1,31 @@
+#Entrar com três números e imprimir o maior número (suponha numeros diferentes). 
+prog algoritmo116
+     real n1, n2, n3, maior;
+     imprima "\nDigite o 1o numero: ";
+     leia n1;
+     imprima "\nDigite o 2o numero: ";
+     leia n2;
+     imprima "\nDigite o 3o numero: ";
+     leia n3;    
+     #10, 5, 20
+     
+     #LOGICA UTILIZADA
+     #Nos encontramos as 3 possibilidades possiveis de maior numero, fizemos a comparaçao com o se alocando caso positivo em uma variavel (MAIOR), para que seja o n1 ele deve
+     #ser o maior dentre os tres, para que n2 seja o maior tambem deve ser os mais dentre os tres e o mesmo se utilizada para n3, programa vera em qual das condições se encaixa
+     #entao irá alocar na variavel maior o mais dentre os 3.
+     
+     se (n1 > n2 && n1 >n3)
+        {
+          maior <- n1; #Caso n1 seja o maior, sera alocado em MAIOR
+        }
+     se (n2 > n1 && n2 > n3)
+        {
+           maior <- n2;
+        }
+    se (n3 > n1 && n3 > n2)
+        {
+         maior <- n3;
+        } 
+    imprima "O maior numero dentre os digitados e: ", maior;
+    imprima "\n\n";       
+fimprog                                                   

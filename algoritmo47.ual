@@ -1,0 +1,13 @@
+#Entrar com um número no formato CDU e imprimir invertido: UDC. (Exemplo:
+#123, sairá 321.) O número deverá ser armazenado em outra variável antes de ser
+#impresso.
+
+prog algoritmo47
+       int n1, u, d, c, invertido;
+       imprima "Digite um numero: ";
+       leia n1;
+       c <- n1 div 100;
+       d <-(n1%100) div 10;
+       u <-(n1%10) div 1;
+       imprima "Valor invertido: ",u, d, c, "\n";
+fimprog

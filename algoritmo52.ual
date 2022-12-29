@@ -1,0 +1,14 @@
+#Entrar com o lado de um quadrado e imprimir: perimetro, area e diagonal
+
+prog algoritmo52
+       real n, peri, area, diag;
+       imprima "\nDigite o valor do lado do quadrado: ";
+       leia n;
+       peri <- n*4;
+       area <- n**2;
+       diag <- n * raiz(2);
+       imprima "\nArea: ", area;
+       imprima "\nPerimetro: ", peri;
+       imprima "\nDiagonal: ", diag;
+       imprima "\n";
+fimprog 

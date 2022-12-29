@@ -1,0 +1,11 @@
+#Entrar com os valores dos catetos de um triângulo retângulo e imprimir a hipotenusa.
+prog algoritmo59
+       real co, ca, hip;
+       imprima "\nDigite o valor do C.A: ";
+       leia ca;
+       imprima "\nDigite o valor do C.O: ";
+       leia co;
+       hip <- raiz(ca**2 + co**2);
+       imprima "\n A hipotenusa e: ", hip, "\n";
+
+fimprog

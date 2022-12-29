@@ -1,0 +1,11 @@
+#Entrar com o raio de um círculo e imprimir a seguinte saída: area e perimetro
+prog algoritmo51
+       real raio, area, peri;
+       imprima "\nDigite o raio: ";
+       leia raio;
+       area <- pi*(raio**2);
+       peri <- 2*pi*raio;
+       imprima "\nA area e: ", area;
+       imprima "\nO perimetro e: ", peri;
+       imprima "\n";
+fimprog                                                                                

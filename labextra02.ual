@@ -1,0 +1,24 @@
+prog labextra2
+       int numeroapartamento;
+       real diaria, promocional, arrecadado, valor70, valor100, prejuizo;
+       imprima "\nDigite o numero de apartamentos: ";
+       leia numeroapartamento;
+       imprima "\nDigite o valor da diaria por apartamento: ";
+       leia diaria; 
+       
+       promocional <- diaria * 0.75;
+       
+       imprima "\nO valoro promocional para o fim de semana: ", formatar (promocional,2), " reais\n";
+       
+       valor70<-numeroapartamento * 0.7;       
+       arrecadado <- valor70 * promocional;
+       imprima "\nValor arrecadado com 70% de capacidade com a promocao: ", formatar(arrecadado,2), " Reais\n";
+       
+       valor100 <- promocional * numeroapartamento;
+       imprima "\nO valor arrecadado com 100% da capacidade com a promocao: ", formatar(valor100,2), " Reais\n";
+       
+       prejuizo <- (diaria*numeroapartamento)-valor100;
+       
+       imprima "\nO valor que o hotel deixou de ganhar com a promocao foi de: ", prejuizo, " Reais\n";
+       imprima "\n";
+fimprog

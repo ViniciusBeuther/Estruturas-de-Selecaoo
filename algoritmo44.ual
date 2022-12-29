@@ -1,0 +1,12 @@
+#Entrar com o número e a base em que se deseja calcular o logaritmo desse número e imprimi-lo.
+prog algoritmo44
+                real n1, base, result;
+                imprima "Digite um valor para ver a log: ";
+                leia n1;
+                imprima "\nAgora digite a base qual deseja: ";
+                leia base;
+                result <- log(n1) / log(base);
+                imprima "\n\nO resultado e: ", result;
+                imprima "\n\n";
+                
+fimprog 

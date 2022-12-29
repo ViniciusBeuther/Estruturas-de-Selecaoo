@@ -1,0 +1,27 @@
+#Entrar com dois números e imprimi-los em ordem crescente (suponha números
+#diferentes).
+prog algoritmo113
+     real n1, n2;
+     imprima "\nDigite um numero: ";
+     leia n1;
+     imprima "\nDigite um numero diferente: ";
+     leia n2;
+     
+     se (n1 > n2){
+     imprima "\nValores em ordem crescente: ", n2, " - ", n1;
+     imprima "\n";
+     }
+     
+     se (n2 > n1){
+     imprima "\nValores em ordem crescente: ", n1, " - ", n2;
+     imprima "\n";
+     }
+     
+     se (n1 == n2){
+     imprima "\nValores digitados sao INVALIDOS pois sao iguais!";
+     imprima "\n";
+     }
+     
+     
+     
+fimprog 

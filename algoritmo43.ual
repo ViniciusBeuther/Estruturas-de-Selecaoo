@@ -1,0 +1,10 @@
+#Entrar com um número e imprimir o logaritmo desse número na base 10
+prog algoritmo43
+       real n1, result;
+       imprima "Digite um numero real para ver o log na base 10: ";
+       leia n1;
+       result <- log(n1)/log(10);
+       imprima "\nA log na base 10 e: ", result;
+       imprima "\n";
+
+fimprog 

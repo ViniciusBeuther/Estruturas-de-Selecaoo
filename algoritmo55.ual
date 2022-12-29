@@ -1,0 +1,10 @@
+#Criar um algoritmo que calcule e imprima a área de um losango. 
+prog algoritmo55
+       real digmaior, digmenor, area;
+       imprima "\nDigite a diagonal maior: ";
+       leia digmaior;
+       imprima "\nDigite a diagonal menor: ";
+       leia digmenor;
+       area <- (digmaior*digmenor)/2;
+       imprima "\nA area do lasango e: ", area, "\n\n";
+fimprog

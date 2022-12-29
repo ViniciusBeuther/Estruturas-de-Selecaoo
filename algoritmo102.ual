@@ -1,0 +1,16 @@
+#Entrar com um número e imprimir uma das mensagens: maior do que 20, igual a
+#20 ou menor do que 20.
+prog algoritmo102
+       int n1;
+       imprima "\nDigite um valor: ";
+       leia n1;
+       se (n1 < 20){
+                  imprima "\nValor digitado e MENOR que 20. \n\n";
+       }
+       se (n1 == 20){
+                  imprima "\nO valor digitado e IGUAL a 20. \n\n";
+       }
+       se (n1 > 20){
+                  imprima "\nO valor digitado e MAIOR que 20. \n\n";
+       }
+fimprog

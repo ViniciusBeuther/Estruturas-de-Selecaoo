@@ -1,0 +1,19 @@
+#Entrar com um ângulo em graus e imprimir: seno, co-seno, tangente, secante,
+#co-secante e co-tangente deste ângulo.
+
+prog algoritmo42
+     real rad, secante, ang, cosecante, cotangente;
+     imprima "Digite um angulo para descobrir seu seno: ";
+     leia ang;
+     imprima "\nO seno e: ", sen((ang*pi)/180), "\n";
+     imprima "\nO co-seno: ", cos((ang*pi)/180), "\n";
+     imprima "\nA tangente: ", tan((ang*pi)/180), "\n";
+     secante <- 1/cos((ang*pi)/180);
+     imprima "\nO secante: ", secante, "\n";
+     cosecante <- 1/sen((ang*pi)/180);
+     imprima "\nO cosecante: ", cosecante, "\n";
+     cotangente <- 1/tan((ang*pi)/180);
+     imprima "\nA cotangente: ", cotangente, "\n\n";
+
+
+fimprog 

@@ -1,0 +1,14 @@
+prog algoritmo94
+       int n1;
+       imprima "\nDigite um numero: ";
+       leia n1;
+       se (n1%3 == 0)
+       {
+        imprima "\nE multiplo de tres. \n\n";
+       }
+       se (n1%3 <> 0)
+       {
+        imprima "\nO valor nao e multiplo de tres \n\n";      
+       }
+       
+fimprog
